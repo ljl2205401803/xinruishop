@@ -1,0 +1,33 @@
+server:
+  port: 9080
+
+#mybatis settings
+mybatis:
+  mapper-locations: classpath:sqlmapper/*.xml
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/xrsx_db?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF8
+    username: root
+    password: ××××××
+
+#logging:
+#  pattern:
+#    #控制台输出的格式
+#    console: logs-%level %msg %n
+#    #文件输出的格式
+#    file: logs-%level %msg %n
+#  level:
+#    #表示整个项目采用的日志等级
+#    root: warn
+#    #表示指定包的日志等级
+#    org:
+#      springframework: info
+#  file:
+#    #生成文件
+#    name: /home/ideaWork/proc2/xiangmushixun/logs/xinruishop.log
+swagger:
+  enabled: true
+
